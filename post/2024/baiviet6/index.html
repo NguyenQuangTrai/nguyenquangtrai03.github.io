@@ -60,7 +60,7 @@
   "headline": "Phương Thức Trong Java",
   "description" : "Khám phá cách khai báo và sử dụng phương thức trong Java.",
   "inLanguage" : "en",
-  "wordCount":  39 ,
+  "wordCount":  332 ,
   "datePublished" : "2024-12-30T00:00:00",
   "dateModified" : "2024-12-30T00:00:00",
   "image" : "https:\/\/nguyenquangtrai.github.io\/nguyenquangtrai03.github.io\/",
@@ -336,10 +336,65 @@
     <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 pt-4">
       <article role="main" class="blog-post">
         <h2 id="phương-thức-trong-java">Phương Thức Trong Java</h2>
-<p>Phương thức là các khối mã có thể tái sử dụng. Chúng có thể nhận tham số và trả về giá trị.</p>
+<p>Phương thức trong Java là các khối mã được định nghĩa để thực hiện một chức năng cụ thể. Chúng giúp tổ chức mã nguồn tốt hơn, tái sử dụng, và giảm sự lặp lại. Một phương thức có thể nhận tham số và có thể trả về giá trị.</p>
+<hr>
+<h3 id="1-cấu-trúc-phương-thức"><strong>1. Cấu Trúc Phương Thức</strong></h3>
+<h4 id="cú-pháp"><strong>Cú Pháp:</strong></h4>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="font-weight:bold">&lt;</span>modifier<span style="font-weight:bold">&gt;</span><span style="color:#bbb"> </span><span style="font-weight:bold">&lt;</span>return_type<span style="font-weight:bold">&gt;</span><span style="color:#bbb"> </span><span style="font-weight:bold">&lt;</span>method_name<span style="font-weight:bold">&gt;</span>(<span style="font-weight:bold">&lt;</span>parameter_list<span style="font-weight:bold">&gt;</span>)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#998;font-style:italic">// Khối mã của phương thức</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="font-weight:bold">return</span><span style="color:#bbb"> </span><span style="font-weight:bold">&lt;</span>value<span style="font-weight:bold">&gt;</span>;<span style="color:#bbb"> </span><span style="color:#998;font-style:italic">// (Nếu có giá trị trả về)</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div><h4 id="giải-thích"><strong>Giải Thích:</strong></h4>
+<ul>
+<li>modifier: Xác định phạm vi truy cập, ví dụ: public, private, protected.</li>
+<li>return_type: Kiểu dữ liệu của giá trị trả về. Nếu không trả về giá trị, sử dụng void.</li>
+<li>method_name: Tên phương thức (tuân theo quy tắc đặt tên biến).</li>
+<li>parameter_list: Danh sách tham số (nếu có), gồm kiểu dữ liệu và tên biến.</li>
+</ul>
+<h4 id="ví-dụ"><strong>Ví Dụ:</strong></h4>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="font-weight:bold">public</span><span style="color:#bbb"> </span><span style="font-weight:bold">static</span><span style="color:#bbb"> </span><span style="color:#458;font-weight:bold">int</span><span style="color:#bbb"> </span><span style="color:#900;font-weight:bold">add</span>(<span style="color:#458;font-weight:bold">int</span><span style="color:#bbb"> </span>a,<span style="color:#bbb"> </span><span style="color:#458;font-weight:bold">int</span><span style="color:#bbb"> </span>b)<span style="color:#bbb"> </span>{<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="font-weight:bold">return</span><span style="color:#bbb"> </span>a<span style="color:#bbb"> </span><span style="font-weight:bold">+</span><span style="color:#bbb"> </span>b;<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div><h3 id="2-gọi-phương-thức">2. Gọi Phương Thức</h3>
+<p>Để sử dụng một phương thức, bạn cần gọi nó trong mã của mình.</p>
+<h4 id="ví-dụ-1"><strong>Ví Dụ:</strong></h4>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="font-weight:bold">public</span><span style="color:#bbb"> </span><span style="font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Calculator</span><span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="font-weight:bold">public</span><span style="color:#bbb"> </span><span style="font-weight:bold">static</span><span style="color:#bbb"> </span><span style="color:#458;font-weight:bold">int</span><span style="color:#bbb"> </span><span style="color:#900;font-weight:bold">add</span>(<span style="color:#458;font-weight:bold">int</span><span style="color:#bbb"> </span>a,<span style="color:#bbb"> </span><span style="color:#458;font-weight:bold">int</span><span style="color:#bbb"> </span>b)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="font-weight:bold">return</span><span style="color:#bbb"> </span>a<span style="color:#bbb"> </span><span style="font-weight:bold">+</span><span style="color:#bbb"> </span>b;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="font-weight:bold">public</span><span style="color:#bbb"> </span><span style="font-weight:bold">static</span><span style="color:#bbb"> </span><span style="color:#458;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#900;font-weight:bold">main</span>(String<span style="font-weight:bold">[]</span><span style="color:#bbb"> </span>args)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#458;font-weight:bold">int</span><span style="color:#bbb"> </span>result<span style="color:#bbb"> </span><span style="font-weight:bold">=</span><span style="color:#bbb"> </span>add(5,<span style="color:#bbb"> </span>10);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>System.<span style="color:#008080">out</span>.<span style="color:#008080">println</span>(<span style="color:#b84">&#34;Tổng là: &#34;</span><span style="color:#bbb"> </span><span style="font-weight:bold">+</span><span style="color:#bbb"> </span>result);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div><h4 id="kết-quả"><strong>Kết Quả:</strong></h4>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>Tổng là<span style="font-weight:bold">:</span> <span style="color:#099">15</span>
+</span></span></code></pre></div><h3 id="3-phương-thức-không-trả-về-giá-trị-void">3. Phương Thức Không Trả Về Giá Trị (void)</h3>
+<p>Phương thức kiểu void không trả về giá trị. Chúng thường được sử dụng để thực hiện các tác vụ.</p>
+<h4 id="ví-dụ-2"><strong>Ví Dụ:</strong></h4>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="font-weight:bold">public</span><span style="color:#bbb"> </span><span style="font-weight:bold">static</span><span style="color:#bbb"> </span><span style="color:#458;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#900;font-weight:bold">greet</span>(String<span style="color:#bbb"> </span>name)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#008080">out</span>.<span style="color:#008080">println</span>(<span style="color:#b84">&#34;Xin chào, &#34;</span><span style="color:#bbb"> </span><span style="font-weight:bold">+</span><span style="color:#bbb"> </span>name<span style="color:#bbb"> </span><span style="font-weight:bold">+</span><span style="color:#bbb"> </span><span style="color:#b84">&#34;!&#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="font-weight:bold">public</span><span style="color:#bbb"> </span><span style="font-weight:bold">static</span><span style="color:#bbb"> </span><span style="color:#458;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#900;font-weight:bold">main</span>(String<span style="font-weight:bold">[]</span><span style="color:#bbb"> </span>args)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>greet(<span style="color:#b84">&#34;Nam&#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div><h4 id="kết-quả-1"><strong>Kết Quả:</strong></h4>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Xin<span style="color:#bbb"> </span>chào,<span style="color:#bbb"> </span>Nam<span style="font-weight:bold">!</span><span style="color:#bbb">
+</span></span></span></code></pre></div><h3 id="4-phương-thức-với-tham-số">4. Phương Thức Với Tham Số</h3>
+<p>Phương thức có thể nhận tham số đầu vào để xử lý dữ liệu.</p>
+<h4 id="ví-dụ-3"><strong>Ví Dụ:</strong></h4>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="font-weight:bold">public</span><span style="color:#bbb"> </span><span style="font-weight:bold">static</span><span style="color:#bbb"> </span><span style="color:#458;font-weight:bold">int</span><span style="color:#bbb"> </span><span style="color:#900;font-weight:bold">multiply</span>(<span style="color:#458;font-weight:bold">int</span><span style="color:#bbb"> </span>a,<span style="color:#bbb"> </span><span style="color:#458;font-weight:bold">int</span><span style="color:#bbb"> </span>b)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="font-weight:bold">return</span><span style="color:#bbb"> </span>a<span style="color:#bbb"> </span><span style="font-weight:bold">*</span><span style="color:#bbb"> </span>b;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="font-weight:bold">public</span><span style="color:#bbb"> </span><span style="font-weight:bold">static</span><span style="color:#bbb"> </span><span style="color:#458;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#900;font-weight:bold">main</span>(String<span style="font-weight:bold">[]</span><span style="color:#bbb"> </span>args)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#458;font-weight:bold">int</span><span style="color:#bbb"> </span>result<span style="color:#bbb"> </span><span style="font-weight:bold">=</span><span style="color:#bbb"> </span>multiply(4,<span style="color:#bbb"> </span>5);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#008080">out</span>.<span style="color:#008080">println</span>(<span style="color:#b84">&#34;Kết quả nhân là: &#34;</span><span style="color:#bbb"> </span><span style="font-weight:bold">+</span><span style="color:#bbb"> </span>result);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div><h4 id="kết-quả-2"><strong>Kết Quả:</strong></h4>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Kết<span style="color:#bbb"> </span>quả<span style="color:#bbb"> </span>nhân<span style="color:#bbb"> </span>là:<span style="color:#bbb"> </span>20<span style="color:#bbb">
 </span></span></span></code></pre></div>
       </article>
     </div>

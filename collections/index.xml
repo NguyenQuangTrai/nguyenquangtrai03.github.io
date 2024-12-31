@@ -11,24 +11,24 @@
     <lastBuildDate>Mon, 30 Dec 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://nguyenquangtrai.github.io/nguyenquangtrai03.github.io/collections/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Bộ siêu tập No.2</title>
+      <title>Chứng chỉ JavaScript Essentials 1</title>
+      <link>https://nguyenquangtrai.github.io/nguyenquangtrai03.github.io/collections/2023/collections/</link>
+      <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate><author>sample@gmail.com (Bino Kochumol Varghese)</author>
+      <guid>https://nguyenquangtrai.github.io/nguyenquangtrai03.github.io/collections/2023/collections/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Chứng chỉ JavaScript Essentials 2</title>
       <link>https://nguyenquangtrai.github.io/nguyenquangtrai03.github.io/collections/2023/collections2/</link>
       <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate><author>sample@gmail.com (Bino Kochumol Varghese)</author>
       <guid>https://nguyenquangtrai.github.io/nguyenquangtrai03.github.io/collections/2023/collections2/</guid>
       <description></description>
     </item>
     <item>
-      <title>Bộ siêu tập No.3</title>
+      <title>Chứng chỉ Networking Basics</title>
       <link>https://nguyenquangtrai.github.io/nguyenquangtrai03.github.io/collections/2023/collections3/</link>
       <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate><author>sample@gmail.com (Bino Kochumol Varghese)</author>
       <guid>https://nguyenquangtrai.github.io/nguyenquangtrai03.github.io/collections/2023/collections3/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Chứng chỉ</title>
-      <link>https://nguyenquangtrai.github.io/nguyenquangtrai03.github.io/collections/2023/collections/</link>
-      <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate><author>sample@gmail.com (Bino Kochumol Varghese)</author>
-      <guid>https://nguyenquangtrai.github.io/nguyenquangtrai03.github.io/collections/2023/collections/</guid>
       <description></description>
     </item>
   </channel>

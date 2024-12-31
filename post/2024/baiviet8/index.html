@@ -60,7 +60,7 @@
   "headline": "Kế Thừa Trong Java",
   "description" : "Khám phá tính năng kế thừa trong Java và cách sử dụng để tái sử dụng mã.",
   "inLanguage" : "en",
-  "wordCount":  48 ,
+  "wordCount":  368 ,
   "datePublished" : "2024-12-30T00:00:00",
   "dateModified" : "2024-12-30T00:00:00",
   "image" : "https:\/\/nguyenquangtrai.github.io\/nguyenquangtrai03.github.io\/",
@@ -336,7 +336,44 @@
     <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 pt-4">
       <article role="main" class="blog-post">
         <h2 id="kế-thừa-trong-java">Kế Thừa Trong Java</h2>
-<p>Kế thừa cho phép một lớp kế thừa các thuộc tính và phương thức từ một lớp khác.</p>
+<p><strong>Kế thừa</strong> là một trong những tính năng cốt lõi của lập trình hướng đối tượng (OOP), cho phép một lớp kế thừa các thuộc tính và phương thức từ một lớp khác. Điều này giúp giảm thiểu việc viết lại mã và tăng khả năng tái sử dụng.</p>
+<hr>
+<h3 id="1-lớp-cha-và-lớp-con"><strong>1. Lớp Cha và Lớp Con</strong></h3>
+<ul>
+<li><strong>Lớp cha (superclass)</strong>: Là lớp được kế thừa.</li>
+<li><strong>Lớp con (subclass)</strong>: Là lớp kế thừa từ lớp cha và có thể mở rộng hoặc ghi đè các phương thức của lớp cha.</li>
+</ul>
+<h4 id="cú-pháp-kế-thừa"><strong>Cú Pháp Kế Thừa:</strong></h4>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Subclass</span><span style="color:#bbb"> </span><span style="font-weight:bold">extends</span><span style="color:#bbb"> </span>Superclass<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#998;font-style:italic">// Các thuộc tính và phương thức của lớp con</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div><h3 id="2-ví-dụ-cơ-bản">2. Ví Dụ Cơ Bản</h3>
+<h4 id="lớp-cha"><strong>Lớp Cha:</strong></h4>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="font-weight:bold">public</span><span style="color:#bbb"> </span><span style="font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Animal</span><span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#458;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#900;font-weight:bold">makeSound</span>()<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>System.<span style="color:#008080">out</span>.<span style="color:#008080">println</span>(<span style="color:#b84">&#34;Some sound&#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div><h4 id="lớp-con-kế-thừa"><strong>Lớp Con Kế Thừa:</strong></h4>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="font-weight:bold">public</span><span style="color:#bbb"> </span><span style="font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Dog</span><span style="color:#bbb"> </span><span style="font-weight:bold">extends</span><span style="color:#bbb"> </span>Animal<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>@Override<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#458;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#900;font-weight:bold">makeSound</span>()<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>System.<span style="color:#008080">out</span>.<span style="color:#008080">println</span>(<span style="color:#b84">&#34;Bark&#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div><h4 id="sử-dụng-lớp-kế-thừa"><strong>Sử Dụng Lớp Kế Thừa:</strong></h4>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="font-weight:bold">public</span><span style="color:#bbb"> </span><span style="font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Main</span><span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="font-weight:bold">public</span><span style="color:#bbb"> </span><span style="font-weight:bold">static</span><span style="color:#bbb"> </span><span style="color:#458;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#900;font-weight:bold">main</span>(String<span style="font-weight:bold">[]</span><span style="color:#bbb"> </span>args)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>Animal<span style="color:#bbb"> </span>animal<span style="color:#bbb"> </span><span style="font-weight:bold">=</span><span style="color:#bbb"> </span><span style="font-weight:bold">new</span><span style="color:#bbb"> </span>Animal();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>animal.<span style="color:#008080">makeSound</span>();<span style="color:#bbb"> </span><span style="color:#998;font-style:italic">// Output: Some sound</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>Dog<span style="color:#bbb"> </span>dog<span style="color:#bbb"> </span><span style="font-weight:bold">=</span><span style="color:#bbb"> </span><span style="font-weight:bold">new</span><span style="color:#bbb"> </span>Dog();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>dog.<span style="color:#008080">makeSound</span>();<span style="color:#bbb">    </span><span style="color:#998;font-style:italic">// Output: Bark</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div><h3 id="3-từ-khóa-super">3. Từ Khóa super</h3>
+<p>Từ khóa super được sử dụng để gọi phương thức hoặc truy cập thuộc tính của lớp cha từ lớp con.</p>
+<h4 id="ví-dụ-super"><strong>Ví Dụ super:</strong></h4>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="font-weight:bold">public</span><span style="color:#bbb"> </span><span style="font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Animal</span><span style="color:#bbb"> </span>{<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#458;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#900;font-weight:bold">makeSound</span>()<span style="color:#bbb"> </span>{<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>System.<span style="color:#008080">out</span>.<span style="color:#008080">println</span>(<span style="color:#b84">&#34;Some sound&#34;</span>);<span style="color:#bbb">
@@ -346,9 +383,46 @@
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="font-weight:bold">public</span><span style="color:#bbb"> </span><span style="font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Dog</span><span style="color:#bbb"> </span><span style="font-weight:bold">extends</span><span style="color:#bbb"> </span>Animal<span style="color:#bbb"> </span>{<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>@Override<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#458;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#900;font-weight:bold">makeSound</span>()<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="font-weight:bold">super</span>.<span style="color:#008080">makeSound</span>();<span style="color:#bbb"> </span><span style="color:#998;font-style:italic">// Gọi phương thức của lớp cha</span><span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>System.<span style="color:#008080">out</span>.<span style="color:#008080">println</span>(<span style="color:#b84">&#34;Bark&#34;</span>);<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div><h4 id="kết-quả"><strong>Kết Quả:</strong></h4>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Some<span style="color:#bbb"> </span>sound<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>Bark<span style="color:#bbb">
+</span></span></span></code></pre></div><h3 id="4-kế-thừa-nhiều-cấp">4. Kế Thừa Nhiều Cấp</h3>
+<p>Kế thừa nhiều cấp xảy ra khi một lớp kế thừa từ một lớp con khác.</p>
+<h4 id="ví-dụ-kế-thừa-nhiều-cấp"><strong>Ví Dụ Kế Thừa Nhiều Cấp:</strong></h4>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="font-weight:bold">public</span><span style="color:#bbb"> </span><span style="font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Animal</span><span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#458;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#900;font-weight:bold">eat</span>()<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>System.<span style="color:#008080">out</span>.<span style="color:#008080">println</span>(<span style="color:#b84">&#34;This animal eats food.&#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="font-weight:bold">public</span><span style="color:#bbb"> </span><span style="font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Mammal</span><span style="color:#bbb"> </span><span style="font-weight:bold">extends</span><span style="color:#bbb"> </span>Animal<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#458;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#900;font-weight:bold">walk</span>()<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>System.<span style="color:#008080">out</span>.<span style="color:#008080">println</span>(<span style="color:#b84">&#34;This mammal walks.&#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="font-weight:bold">public</span><span style="color:#bbb"> </span><span style="font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Dog</span><span style="color:#bbb"> </span><span style="font-weight:bold">extends</span><span style="color:#bbb"> </span>Mammal<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#458;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#900;font-weight:bold">bark</span>()<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>System.<span style="color:#008080">out</span>.<span style="color:#008080">println</span>(<span style="color:#b84">&#34;This dog barks.&#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div><h4 id="sử-dụng"><strong>Sử Dụng:</strong></h4>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="font-weight:bold">public</span><span style="color:#bbb"> </span><span style="font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Main</span><span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="font-weight:bold">public</span><span style="color:#bbb"> </span><span style="font-weight:bold">static</span><span style="color:#bbb"> </span><span style="color:#458;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#900;font-weight:bold">main</span>(String<span style="font-weight:bold">[]</span><span style="color:#bbb"> </span>args)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>Dog<span style="color:#bbb"> </span>dog<span style="color:#bbb"> </span><span style="font-weight:bold">=</span><span style="color:#bbb"> </span><span style="font-weight:bold">new</span><span style="color:#bbb"> </span>Dog();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>dog.<span style="color:#008080">eat</span>();<span style="color:#bbb">  </span><span style="color:#998;font-style:italic">// Từ lớp Animal</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>dog.<span style="color:#008080">walk</span>();<span style="color:#bbb"> </span><span style="color:#998;font-style:italic">// Từ lớp Mammal</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>dog.<span style="color:#008080">bark</span>();<span style="color:#bbb"> </span><span style="color:#998;font-style:italic">// Từ lớp Dog</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div><h4 id="kết-quả-1"><strong>Kết Quả:</strong></h4>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>This<span style="color:#bbb"> </span>animal<span style="color:#bbb"> </span>eats<span style="color:#bbb"> </span>food.<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>This<span style="color:#bbb"> </span>mammal<span style="color:#bbb"> </span>walks.<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>This<span style="color:#bbb"> </span>dog<span style="color:#bbb"> </span>barks.<span style="color:#bbb">
 </span></span></span></code></pre></div>
       </article>
     </div>

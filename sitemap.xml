@@ -12,16 +12,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://nguyenquangtrai.github.io/nguyenquangtrai03.github.io/collections/2023/collections2/</loc>
-    <lastmod>2024-12-30T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://nguyenquangtrai.github.io/nguyenquangtrai03.github.io/collections/2023/collections3/</loc>
-    <lastmod>2024-12-30T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://nguyenquangtrai.github.io/nguyenquangtrai03.github.io/collections/</loc>
     <lastmod>2024-12-30T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -43,6 +33,16 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://nguyenquangtrai.github.io/nguyenquangtrai03.github.io/collections/2023/collections/</loc>
+    <lastmod>2024-12-30T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://nguyenquangtrai.github.io/nguyenquangtrai03.github.io/collections/2023/collections2/</loc>
+    <lastmod>2024-12-30T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://nguyenquangtrai.github.io/nguyenquangtrai03.github.io/collections/2023/collections3/</loc>
     <lastmod>2024-12-30T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

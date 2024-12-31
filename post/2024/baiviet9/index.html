@@ -60,7 +60,7 @@
   "headline": "Xử Lý Ngoại Lệ Trong Java",
   "description" : "Tìm hiểu cách xử lý ngoại lệ trong Java để ứng dụng của bạn trở nên ổn định và dễ bảo trì.",
   "inLanguage" : "en",
-  "wordCount":  48 ,
+  "wordCount":  333 ,
   "datePublished" : "2024-12-30T00:00:00",
   "dateModified" : "2024-12-30T00:00:00",
   "image" : "https:\/\/nguyenquangtrai.github.io\/nguyenquangtrai03.github.io\/",
@@ -336,12 +336,56 @@
     <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 pt-4">
       <article role="main" class="blog-post">
         <h2 id="xử-lý-ngoại-lệ-trong-java">Xử Lý Ngoại Lệ Trong Java</h2>
-<p>Xử lý ngoại lệ giúp bạn kiểm soát các lỗi xảy ra trong chương trình, giữ cho ứng dụng không bị dừng đột ngột.</p>
+<p>Ngoại lệ (Exception) là các tình huống lỗi xảy ra trong quá trình thực thi chương trình. Java cung cấp cơ chế xử lý ngoại lệ để kiểm soát các lỗi và ngăn chặn ứng dụng bị dừng đột ngột.</p>
+<hr>
+<h3 id="1-cơ-bản-về-ngoại-lệ"><strong>1. Cơ Bản Về Ngoại Lệ</strong></h3>
+<p>Một ngoại lệ xảy ra khi một sự kiện bất thường làm gián đoạn luồng thực thi bình thường của chương trình. Ví dụ: chia một số cho 0 hoặc cố gắng truy cập một chỉ mục không tồn tại trong mảng.</p>
+<h4 id="ví-dụ-ngoại-lệ"><strong>Ví Dụ Ngoại Lệ:</strong></h4>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#458;font-weight:bold">int</span><span style="color:#bbb"> </span>result<span style="color:#bbb"> </span><span style="font-weight:bold">=</span><span style="color:#bbb"> </span>10<span style="color:#bbb"> </span><span style="font-weight:bold">/</span><span style="color:#bbb"> </span>0;<span style="color:#bbb"> </span><span style="color:#998;font-style:italic">// ArithmeticException: / by zero</span><span style="color:#bbb">
+</span></span></span></code></pre></div><h3 id="2-xử-lý-ngoại-lệ-sử-dụng-try-catch">2. Xử Lý Ngoại Lệ Sử Dụng try-catch</h3>
+<p>Câu lệnh try chứa mã có khả năng gây ra ngoại lệ. Nếu ngoại lệ xảy ra, khối catch sẽ xử lý nó.</p>
+<h4 id="cú-pháp-try-catch"><strong>Cú Pháp try-catch:</strong></h4>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="font-weight:bold">try</span><span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#998;font-style:italic">// Mã có thể gây ra ngoại lệ</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb"> </span><span style="font-weight:bold">catch</span><span style="color:#bbb"> </span>(ExceptionType<span style="color:#bbb"> </span>e)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#998;font-style:italic">// Xử lý ngoại lệ</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div><h4 id="ví-dụ"><strong>Ví Dụ:</strong></h4>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="font-weight:bold">try</span><span style="color:#bbb"> </span>{<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#458;font-weight:bold">int</span><span style="color:#bbb"> </span>result<span style="color:#bbb"> </span><span style="font-weight:bold">=</span><span style="color:#bbb"> </span>10<span style="color:#bbb"> </span><span style="font-weight:bold">/</span><span style="color:#bbb"> </span>0;<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb"> </span><span style="font-weight:bold">catch</span><span style="color:#bbb"> </span>(ArithmeticException<span style="color:#bbb"> </span>e)<span style="color:#bbb"> </span>{<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#008080">out</span>.<span style="color:#008080">println</span>(<span style="color:#b84">&#34;Error: &#34;</span><span style="color:#bbb"> </span><span style="font-weight:bold">+</span><span style="color:#bbb"> </span>e.<span style="color:#008080">getMessage</span>());<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div><h4 id="kết-quả"><strong>Kết Quả:</strong></h4>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Error:<span style="color:#bbb"> </span><span style="font-weight:bold">/</span><span style="color:#bbb"> </span>by<span style="color:#bbb"> </span>zero<span style="color:#bbb">
+</span></span></span></code></pre></div><h3 id="3-từ-khóa-finally">3. Từ Khóa finally</h3>
+<p>Khối finally luôn được thực thi, bất kể ngoại lệ có xảy ra hay không. Thường được sử dụng để dọn dẹp tài nguyên như đóng tệp hoặc kết nối cơ sở dữ liệu.</p>
+<h4 id="ví-dụ-finally"><strong>Ví Dụ finally:</strong></h4>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="font-weight:bold">try</span><span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#458;font-weight:bold">int</span><span style="font-weight:bold">[]</span><span style="color:#bbb"> </span>numbers<span style="color:#bbb"> </span><span style="font-weight:bold">=</span><span style="color:#bbb"> </span>{1,<span style="color:#bbb"> </span>2,<span style="color:#bbb"> </span>3};<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#008080">out</span>.<span style="color:#008080">println</span>(numbers<span style="font-weight:bold">[</span>5<span style="font-weight:bold">]</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb"> </span><span style="font-weight:bold">catch</span><span style="color:#bbb"> </span>(ArrayIndexOutOfBoundsException<span style="color:#bbb"> </span>e)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#008080">out</span>.<span style="color:#008080">println</span>(<span style="color:#b84">&#34;Index out of bounds!&#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb"> </span><span style="font-weight:bold">finally</span><span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#008080">out</span>.<span style="color:#008080">println</span>(<span style="color:#b84">&#34;Execution completed.&#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div><h4 id="kết-quả-1"><strong>Kết Quả:</strong></h4>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Index<span style="color:#bbb"> </span>out<span style="color:#bbb"> </span>of<span style="color:#bbb"> </span>bounds<span style="font-weight:bold">!</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>Execution<span style="color:#bbb"> </span>completed.<span style="color:#bbb">
+</span></span></span></code></pre></div><h3 id="4-xử-lý-nhiều-ngoại-lệ">4. Xử Lý Nhiều Ngoại Lệ</h3>
+<p>Bạn có thể xử lý nhiều loại ngoại lệ bằng cách sử dụng nhiều khối catch.</p>
+<h4 id="ví-dụ-nhiều-ngoại-lệ"><strong>Ví Dụ Nhiều Ngoại Lệ:</strong></h4>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="font-weight:bold">try</span><span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#458;font-weight:bold">int</span><span style="color:#bbb"> </span>result<span style="color:#bbb"> </span><span style="font-weight:bold">=</span><span style="color:#bbb"> </span>10<span style="color:#bbb"> </span><span style="font-weight:bold">/</span><span style="color:#bbb"> </span>0;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#458;font-weight:bold">int</span><span style="font-weight:bold">[]</span><span style="color:#bbb"> </span>numbers<span style="color:#bbb"> </span><span style="font-weight:bold">=</span><span style="color:#bbb"> </span>{1,<span style="color:#bbb"> </span>2,<span style="color:#bbb"> </span>3};<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#008080">out</span>.<span style="color:#008080">println</span>(numbers<span style="font-weight:bold">[</span>5<span style="font-weight:bold">]</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb"> </span><span style="font-weight:bold">catch</span><span style="color:#bbb"> </span>(ArithmeticException<span style="color:#bbb"> </span>e)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#008080">out</span>.<span style="color:#008080">println</span>(<span style="color:#b84">&#34;Arithmetic Error: &#34;</span><span style="color:#bbb"> </span><span style="font-weight:bold">+</span><span style="color:#bbb"> </span>e.<span style="color:#008080">getMessage</span>());<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb"> </span><span style="font-weight:bold">catch</span><span style="color:#bbb"> </span>(ArrayIndexOutOfBoundsException<span style="color:#bbb"> </span>e)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#008080">out</span>.<span style="color:#008080">println</span>(<span style="color:#b84">&#34;Array Error: &#34;</span><span style="color:#bbb"> </span><span style="font-weight:bold">+</span><span style="color:#bbb"> </span>e.<span style="color:#008080">getMessage</span>());<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div><h4 id="kết-quả-2"><strong>Kết Quả:</strong></h4>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Arithmetic<span style="color:#bbb"> </span>Error:<span style="color:#bbb"> </span><span style="font-weight:bold">/</span><span style="color:#bbb"> </span>by<span style="color:#bbb"> </span>zero<span style="color:#bbb">
 </span></span></span></code></pre></div>
       </article>
     </div>

@@ -60,7 +60,7 @@
   "headline": "Các Loại Vòng Lặp Trong Java",
   "description" : "Tìm hiểu về các vòng lặp trong Java, bao gồm for, while và do-while.",
   "inLanguage" : "en",
-  "wordCount":  65 ,
+  "wordCount":  272 ,
   "datePublished" : "2024-12-30T00:00:00",
   "dateModified" : "2024-12-30T00:00:00",
   "image" : "https:\/\/nguyenquangtrai.github.io\/nguyenquangtrai03.github.io\/",
@@ -335,15 +335,63 @@
 
     <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 pt-4">
       <article role="main" class="blog-post">
-        <h2 id="các-loại-vòng-lặp">Các Loại Vòng Lặp</h2>
-<p>Java cung cấp 3 loại vòng lặp cơ bản:</p>
+        <h2 id="các-loại-vòng-lặp-trong-java">Các Loại Vòng Lặp Trong Java</h2>
+<p>Trong lập trình Java, vòng lặp được sử dụng để thực hiện một đoạn mã nhiều lần cho đến khi một điều kiện nhất định được đáp ứng. Java cung cấp ba loại vòng lặp cơ bản:</p>
 <ol>
-<li><strong>for loop</strong>: Thích hợp cho các tình huống lặp với số lần xác định.</li>
-<li><strong>while loop</strong>: Thích hợp khi bạn không biết trước số lần lặp.</li>
-<li><strong>do-while loop</strong>: Chạy ít nhất một lần, ngay cả khi điều kiện không thỏa mãn.</li>
+<li><strong><code>for</code> loop</strong></li>
+<li><strong><code>while</code> loop</strong></li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="font-weight:bold">for</span>(<span style="color:#458;font-weight:bold">int</span><span style="color:#bbb"> </span>i<span style="color:#bbb"> </span><span style="font-weight:bold">=</span><span style="color:#bbb"> </span>0;<span style="color:#bbb"> </span>i<span style="color:#bbb"> </span><span style="font-weight:bold">&lt;</span><span style="color:#bbb"> </span>5;<span style="color:#bbb"> </span>i<span style="font-weight:bold">++</span>)<span style="color:#bbb"> </span>{<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#008080">out</span>.<span style="color:#008080">println</span>(i);<span style="color:#bbb">
+<hr>
+<h3 id="1-vòng-lặp-for"><strong>1. Vòng Lặp <code>for</code></strong></h3>
+<h4 id="mô-tả"><strong>Mô Tả:</strong></h4>
+<p>Vòng lặp <code>for</code> được sử dụng khi bạn biết trước số lần lặp. Nó bao gồm ba phần:</p>
+<ul>
+<li><strong>Khởi tạo:</strong> Giá trị ban đầu của biến lặp.</li>
+<li><strong>Điều kiện:</strong> Xác định điều kiện để tiếp tục lặp.</li>
+<li><strong>Cập nhật:</strong> Thay đổi giá trị biến lặp sau mỗi lần lặp.</li>
+</ul>
+<h4 id="cú-pháp"><strong>Cú Pháp:</strong></h4>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="font-weight:bold">for</span><span style="color:#bbb"> </span>(khởi_tạo;<span style="color:#bbb"> </span>điều_kiện;<span style="color:#bbb"> </span>cập_nhật)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#998;font-style:italic">// Mã thực thi</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div><h4 id="ví-dụ"><strong>Ví Dụ:</strong></h4>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="font-weight:bold">for</span><span style="color:#bbb"> </span>(<span style="color:#458;font-weight:bold">int</span><span style="color:#bbb"> </span>i<span style="color:#bbb"> </span><span style="font-weight:bold">=</span><span style="color:#bbb"> </span>0;<span style="color:#bbb"> </span>i<span style="color:#bbb"> </span><span style="font-weight:bold">&lt;</span><span style="color:#bbb"> </span>5;<span style="color:#bbb"> </span>i<span style="font-weight:bold">++</span>)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#008080">out</span>.<span style="color:#008080">println</span>(<span style="color:#b84">&#34;Lần lặp: &#34;</span><span style="color:#bbb"> </span><span style="font-weight:bold">+</span><span style="color:#bbb"> </span>i);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div><h4 id="kết-quả"><strong>Kết Quả:</strong></h4>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Lần<span style="color:#bbb"> </span>lặp:<span style="color:#bbb"> </span>0<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>Lần<span style="color:#bbb"> </span>lặp:<span style="color:#bbb"> </span>1<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>Lần<span style="color:#bbb"> </span>lặp:<span style="color:#bbb"> </span>2<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>Lần<span style="color:#bbb"> </span>lặp:<span style="color:#bbb"> </span>3<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>Lần<span style="color:#bbb"> </span>lặp:<span style="color:#bbb"> </span>4<span style="color:#bbb">
+</span></span></span></code></pre></div><h5 id="vòng-lặp-lồng-nhau"><strong>Vòng Lặp Lồng Nhau:</strong></h5>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="font-weight:bold">for</span><span style="color:#bbb"> </span>(<span style="color:#458;font-weight:bold">int</span><span style="color:#bbb"> </span>i<span style="color:#bbb"> </span><span style="font-weight:bold">=</span><span style="color:#bbb"> </span>1;<span style="color:#bbb"> </span>i<span style="color:#bbb"> </span><span style="font-weight:bold">&lt;=</span><span style="color:#bbb"> </span>3;<span style="color:#bbb"> </span>i<span style="font-weight:bold">++</span>)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="font-weight:bold">for</span><span style="color:#bbb"> </span>(<span style="color:#458;font-weight:bold">int</span><span style="color:#bbb"> </span>j<span style="color:#bbb"> </span><span style="font-weight:bold">=</span><span style="color:#bbb"> </span>1;<span style="color:#bbb"> </span>j<span style="color:#bbb"> </span><span style="font-weight:bold">&lt;=</span><span style="color:#bbb"> </span>3;<span style="color:#bbb"> </span>j<span style="font-weight:bold">++</span>)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>System.<span style="color:#008080">out</span>.<span style="color:#008080">println</span>(<span style="color:#b84">&#34;i = &#34;</span><span style="color:#bbb"> </span><span style="font-weight:bold">+</span><span style="color:#bbb"> </span>i<span style="color:#bbb"> </span><span style="font-weight:bold">+</span><span style="color:#bbb"> </span><span style="color:#b84">&#34;, j = &#34;</span><span style="color:#bbb"> </span><span style="font-weight:bold">+</span><span style="color:#bbb"> </span>j);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div><h3 id="2-vòng-lặp-while"><strong>2. Vòng Lặp <code>while</code></strong></h3>
+<h4 id="mô-tả-1"><strong>Mô Tả:</strong></h4>
+<p>Vòng lặp <code>while</code> được sử dụng khi bạn không biết trước số lần lặp. Điều kiện được kiểm tra trước khi thực thi thân vòng lặp.</p>
+<p>Cú Pháp:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="font-weight:bold">while</span><span style="color:#bbb"> </span>(điều_kiện)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#998;font-style:italic">// Mã thực thi</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div><p>Ví Dụ:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#458;font-weight:bold">int</span><span style="color:#bbb"> </span>count<span style="color:#bbb"> </span><span style="font-weight:bold">=</span><span style="color:#bbb"> </span>0;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="font-weight:bold">while</span><span style="color:#bbb"> </span>(count<span style="color:#bbb"> </span><span style="font-weight:bold">&lt;</span><span style="color:#bbb"> </span>5)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#008080">out</span>.<span style="color:#008080">println</span>(<span style="color:#b84">&#34;Đếm: &#34;</span><span style="color:#bbb"> </span><span style="font-weight:bold">+</span><span style="color:#bbb"> </span>count);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>count<span style="font-weight:bold">++</span>;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div><p>Kết Quả:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-makefile" data-lang="makefile"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">Đếm</span><span style="font-weight:bold">:</span> 0
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">Đếm</span><span style="font-weight:bold">:</span> 1
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">Đếm</span><span style="font-weight:bold">:</span> 2
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">Đếm</span><span style="font-weight:bold">:</span> 3
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">Đếm</span><span style="font-weight:bold">:</span> 4
+</span></span></code></pre></div><p>Vòng Lặp Vô Hạn (Cẩn Thận):</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="font-weight:bold">while</span><span style="color:#bbb"> </span>(<span style="font-weight:bold">true</span>)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#008080">out</span>.<span style="color:#008080">println</span>(<span style="color:#b84">&#34;Vòng lặp vô hạn&#34;</span>);<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
 </span></span></span></code></pre></div>
       </article>

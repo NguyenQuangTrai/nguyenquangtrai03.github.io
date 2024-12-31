@@ -15,7 +15,7 @@
       <link>https://nguyenquangtrai.github.io/nguyenquangtrai03.github.io/post/2024/baiviet2/</link>
       <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate><author>sample@gmail.com (Bino Kochumol Varghese)</author>
       <guid>https://nguyenquangtrai.github.io/nguyenquangtrai03.github.io/post/2024/baiviet2/</guid>
-      <description>&lt;h2 id=&#34;cấu-trúc-cơ-bản-của-một-chương-trình-java&#34;&gt;Cấu Trúc Cơ Bản Của Một Chương Trình Java&lt;/h2&gt;&#xA;&lt;p&gt;Chương trình Java cơ bản bắt đầu từ phương thức chính &lt;code&gt;main()&lt;/code&gt;. Mỗi chương trình Java phải có ít nhất một lớp, và lớp đó sẽ chứa phương thức &lt;code&gt;main()&lt;/code&gt;.&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;cấu-trúc-cơ-bản-của-một-chương-trình-java&#34;&gt;Cấu Trúc Cơ Bản Của Một Chương Trình Java&lt;/h2&gt;&#xA;&lt;p&gt;Chương trình Java cơ bản bắt đầu từ phương thức chính &lt;code&gt;main()&lt;/code&gt;. Đây là điểm khởi đầu mà JVM (Java Virtual Machine) sử dụng để thực thi chương trình. Mỗi chương trình Java phải có ít nhất một lớp, và lớp đó sẽ chứa phương thức &lt;code&gt;main()&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

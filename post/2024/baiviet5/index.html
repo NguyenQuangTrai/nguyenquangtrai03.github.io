@@ -60,7 +60,7 @@
   "headline": "Điều Kiện Trong Java",
   "description" : "Khám phá cách sử dụng các câu lệnh điều kiện như if, else if, và switch trong Java.",
   "inLanguage" : "en",
-  "wordCount":  42 ,
+  "wordCount":  414 ,
   "datePublished" : "2024-12-30T00:00:00",
   "dateModified" : "2024-12-30T00:00:00",
   "image" : "https:\/\/nguyenquangtrai.github.io\/nguyenquangtrai03.github.io\/",
@@ -335,15 +335,104 @@
 
     <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 pt-4">
       <article role="main" class="blog-post">
-        <h2 id="câu-lệnh-điều-kiện">Câu Lệnh Điều Kiện</h2>
-<p>Java hỗ trợ nhiều loại câu lệnh điều kiện để kiểm tra điều kiện và thực thi mã tùy thuộc vào kết quả.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#458;font-weight:bold">int</span><span style="color:#bbb"> </span>age<span style="color:#bbb"> </span><span style="font-weight:bold">=</span><span style="color:#bbb"> </span>20;<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="font-weight:bold">if</span><span style="color:#bbb"> </span>(age<span style="color:#bbb"> </span><span style="font-weight:bold">&gt;=</span><span style="color:#bbb"> </span>18)<span style="color:#bbb"> </span>{<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#008080">out</span>.<span style="color:#008080">println</span>(<span style="color:#b84">&#34;Adult&#34;</span>);<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb"> </span><span style="font-weight:bold">else</span><span style="color:#bbb"> </span>{<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#008080">out</span>.<span style="color:#008080">println</span>(<span style="color:#b84">&#34;Minor&#34;</span>);<span style="color:#bbb">
+        <h2 id="điều-kiện-trong-java">Điều Kiện Trong Java</h2>
+<p>Trong Java, các câu lệnh điều kiện được sử dụng để quyết định thực thi một đoạn mã dựa trên kết quả của một điều kiện logic. Các loại câu lệnh điều kiện chính trong Java bao gồm:</p>
+<ol>
+<li><strong><code>if</code> statement</strong></li>
+<li><strong><code>if-else</code> statement</strong></li>
+<li><strong><code>else if</code> ladder</strong></li>
+<li><strong><code>switch</code> statement</strong></li>
+</ol>
+<hr>
+<h3 id="1-câu-lệnh-if"><strong>1. Câu Lệnh <code>if</code></strong></h3>
+<h4 id="mô-tả"><strong>Mô Tả:</strong></h4>
+<p>Câu lệnh <code>if</code> kiểm tra một điều kiện. Nếu điều kiện là <code>true</code>, đoạn mã bên trong sẽ được thực thi.</p>
+<h4 id="cú-pháp"><strong>Cú Pháp:</strong></h4>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="font-weight:bold">if</span><span style="color:#bbb"> </span>(điều_kiện)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#998;font-style:italic">// Mã thực thi nếu điều kiện đúng</span><span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
-</span></span></span></code></pre></div>
+</span></span></span></code></pre></div><h3 id="2-câu-lệnh-if-else">2. Câu Lệnh <code>if-else</code></h3>
+<h4 id="mô-tả-1"><strong>Mô Tả:</strong></h4>
+<p>Câu lệnh <code>if-else</code> cung cấp hai lựa chọn: một cho trường hợp điều kiện đúng và một cho trường hợp điều kiện sai.</p>
+<h4 id="cú-pháp-1"><strong>Cú Pháp:</strong></h4>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="font-weight:bold">if</span><span style="color:#bbb"> </span>(điều_kiện)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#998;font-style:italic">// Mã thực thi nếu điều kiện đúng</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb"> </span><span style="font-weight:bold">else</span><span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#998;font-style:italic">// Mã thực thi nếu điều kiện sai</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div><h4 id="ví-dụ"><strong>Ví Dụ:</strong></h4>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#458;font-weight:bold">int</span><span style="color:#bbb"> </span>age<span style="color:#bbb"> </span><span style="font-weight:bold">=</span><span style="color:#bbb"> </span>16;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="font-weight:bold">if</span><span style="color:#bbb"> </span>(age<span style="color:#bbb"> </span><span style="font-weight:bold">&gt;=</span><span style="color:#bbb"> </span>18)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#008080">out</span>.<span style="color:#008080">println</span>(<span style="color:#b84">&#34;Bạn đủ tuổi trưởng thành.&#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb"> </span><span style="font-weight:bold">else</span><span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#008080">out</span>.<span style="color:#008080">println</span>(<span style="color:#b84">&#34;Bạn chưa đủ tuổi trưởng thành.&#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div><h4 id="kết-quả"><strong>Kết Quả:</strong></h4>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#000080">Bạn</span> <span style="color:#000080">chưa</span> <span style="color:#000080">đủ</span> <span style="color:#000080">tuổi</span> <span style="color:#000080">trưởng</span> <span style="color:#000080">thành</span><span style="font-weight:bold">.</span>
+</span></span></code></pre></div><h3 id="3-câu-lệnh-else-if-ladder">3. Câu Lệnh else if Ladder</h3>
+<h4 id="mô-tả-2"><strong>Mô Tả:</strong></h4>
+<p>Câu lệnh else if cho phép kiểm tra nhiều điều kiện liên tiếp. Nếu một điều kiện đúng, các điều kiện sau đó sẽ bị bỏ qua.</p>
+<h4 id="cú-pháp-2"><strong>Cú Pháp:</strong></h4>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="font-weight:bold">if</span><span style="color:#bbb"> </span>(điều_kiện_1)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#998;font-style:italic">// Mã thực thi nếu điều kiện_1 đúng</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb"> </span><span style="font-weight:bold">else</span><span style="color:#bbb"> </span><span style="font-weight:bold">if</span><span style="color:#bbb"> </span>(điều_kiện_2)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#998;font-style:italic">// Mã thực thi nếu điều kiện_2 đúng</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb"> </span><span style="font-weight:bold">else</span><span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#998;font-style:italic">// Mã thực thi nếu không có điều kiện nào đúng</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div><h3 id="ví-dụ-1"><strong>Ví Dụ:</strong></h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#458;font-weight:bold">int</span><span style="color:#bbb"> </span>score<span style="color:#bbb"> </span><span style="font-weight:bold">=</span><span style="color:#bbb"> </span>85;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="font-weight:bold">if</span><span style="color:#bbb"> </span>(score<span style="color:#bbb"> </span><span style="font-weight:bold">&gt;=</span><span style="color:#bbb"> </span>90)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#008080">out</span>.<span style="color:#008080">println</span>(<span style="color:#b84">&#34;Xếp loại: Xuất sắc.&#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb"> </span><span style="font-weight:bold">else</span><span style="color:#bbb"> </span><span style="font-weight:bold">if</span><span style="color:#bbb"> </span>(score<span style="color:#bbb"> </span><span style="font-weight:bold">&gt;=</span><span style="color:#bbb"> </span>75)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#008080">out</span>.<span style="color:#008080">println</span>(<span style="color:#b84">&#34;Xếp loại: Giỏi.&#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb"> </span><span style="font-weight:bold">else</span><span style="color:#bbb"> </span><span style="font-weight:bold">if</span><span style="color:#bbb"> </span>(score<span style="color:#bbb"> </span><span style="font-weight:bold">&gt;=</span><span style="color:#bbb"> </span>50)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#008080">out</span>.<span style="color:#008080">println</span>(<span style="color:#b84">&#34;Xếp loại: Trung bình.&#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb"> </span><span style="font-weight:bold">else</span><span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#008080">out</span>.<span style="color:#008080">println</span>(<span style="color:#b84">&#34;Xếp loại: Kém.&#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div><h3 id="kết-quả-1"><strong>Kết Quả:</strong></h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Xếp loại: Giỏi.
+</span></span></code></pre></div><h3 id="4-câu-lệnh-switch">4. Câu Lệnh switch</h3>
+<h4 id="mô-tả-3"><strong>Mô Tả:</strong></h4>
+<p>Câu lệnh switch được sử dụng để thay thế chuỗi các câu lệnh if-else if khi bạn cần kiểm tra một biến với nhiều giá trị cố định.</p>
+<h4 id="cú-pháp-3"><strong>Cú Pháp:</strong></h4>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="font-weight:bold">switch</span><span style="color:#bbb"> </span>(biểu_thức)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="font-weight:bold">case</span><span style="color:#bbb"> </span>giá_trị_1:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#998;font-style:italic">// Mã thực thi</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="font-weight:bold">break</span>;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="font-weight:bold">case</span><span style="color:#bbb"> </span>giá_trị_2:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#998;font-style:italic">// Mã thực thi</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="font-weight:bold">break</span>;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="font-weight:bold">default</span>:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#998;font-style:italic">// Mã thực thi nếu không có giá trị nào khớp</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="font-weight:bold">break</span>;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div><h4 id="ví-dụ-2"><strong>Ví Dụ:</strong></h4>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#458;font-weight:bold">int</span><span style="color:#bbb"> </span>day<span style="color:#bbb"> </span><span style="font-weight:bold">=</span><span style="color:#bbb"> </span>3;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="font-weight:bold">switch</span><span style="color:#bbb"> </span>(day)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="font-weight:bold">case</span><span style="color:#bbb"> </span>1:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>System.<span style="color:#008080">out</span>.<span style="color:#008080">println</span>(<span style="color:#b84">&#34;Thứ Hai&#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="font-weight:bold">break</span>;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="font-weight:bold">case</span><span style="color:#bbb"> </span>2:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>System.<span style="color:#008080">out</span>.<span style="color:#008080">println</span>(<span style="color:#b84">&#34;Thứ Ba&#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="font-weight:bold">break</span>;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="font-weight:bold">case</span><span style="color:#bbb"> </span>3:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>System.<span style="color:#008080">out</span>.<span style="color:#008080">println</span>(<span style="color:#b84">&#34;Thứ Tư&#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="font-weight:bold">break</span>;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="font-weight:bold">case</span><span style="color:#bbb"> </span>4:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>System.<span style="color:#008080">out</span>.<span style="color:#008080">println</span>(<span style="color:#b84">&#34;Thứ Năm&#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="font-weight:bold">break</span>;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="font-weight:bold">case</span><span style="color:#bbb"> </span>5:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>System.<span style="color:#008080">out</span>.<span style="color:#008080">println</span>(<span style="color:#b84">&#34;Thứ Sáu&#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="font-weight:bold">break</span>;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="font-weight:bold">default</span>:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>System.<span style="color:#008080">out</span>.<span style="color:#008080">println</span>(<span style="color:#b84">&#34;Cuối tuần&#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="font-weight:bold">break</span>;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div><h4 id="kết-quả-2"><strong>Kết Quả:</strong></h4>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#000080">Thứ</span> <span style="color:#000080">Tư</span>
+</span></span></code></pre></div>
       </article>
     </div>
   </div>
